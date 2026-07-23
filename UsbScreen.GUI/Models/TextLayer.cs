@@ -11,8 +11,8 @@ public partial class TextLayer : ObservableObject
     [ObservableProperty] private double _y;
     [ObservableProperty] private string _text = "Text";
     [ObservableProperty] private string _color = "White";
-    [ObservableProperty] private int _fontSize = 16;
-    [ObservableProperty] private string _fontFamily = "Arial";
+    [ObservableProperty] private int _fontSize = 12;
+    [ObservableProperty] private string _fontFamily = FontConfiguration.AvaloniaFontFamily;
 
     [ObservableProperty] private string _displayText = "Text";
 

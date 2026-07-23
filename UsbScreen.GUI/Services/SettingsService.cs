@@ -11,7 +11,7 @@ namespace UsbScreen.GUI.Services;
 public class AppSettings
 {
     public string Theme { get; set; } = "Light";
-    public string Language { get; set; } = "en-US";
+    public string Language { get; set; } = "ja-JP";
     public int SlideshowIntervalSeconds { get; set; } = 5;
     public string? LastSelectedPort { get; set; }
     public bool MinimizeToTrayOnClose { get; set; } = false;

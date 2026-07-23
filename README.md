@@ -8,11 +8,65 @@
 ![Avalonia](https://img.shields.io/badge/UI-Avalonia-red.svg)
 ![AOT](https://img.shields.io/badge/Compiled-Native%20AOT-orange.svg)
 
-**A cross-platform, high-performance toolkit for managing MSU Mini USB OLED/LCD screens.**
+**MSU Mini USB OLED/LCDスクリーンを日本語で管理するための派生版です。**
 
-[English](#english) | [简体中文](#zh-cn)
+[日本語](#japanese) | [English](#english) | [简体中文](#zh-cn)
 
 </div>
+
+---
+
+<a name="japanese"></a>
+
+## 🌟 主な機能
+
+### 🖥️ GUIマネージャー（UsbScreen.GUI）
+
+* **日本語UI**: 新規環境では日本語を既定とし、設定から日本語・英語・簡体字中国語を選択できます。
+* **ビジュアルデザイナー**: 160×80のキャンバスで表示内容を編集できます。
+* **レイヤー機能**: 複数の文字レイヤーについて、位置、色、文字サイズ、フォントを設定できます。
+* **動的変数**: `%CPU%`、`%RAM%`、`%TIME%`、`%DATE%`、`%INET%`を使用できます。
+* **画像表示**: PNG、JPG、GIFに対応します。
+* **プリセット**: 表示設定を保存・読込みできます。
+* **タスクトレイ**: ウィンドウを閉じてもバックグラウンドで動作できます。
+
+### 🔤 日本語表示フォント
+
+LCDの日本語表示には**JFドットM+H12**（`JF-Dot-MPlusH12.ttf`）を使用します。
+フォントファイルはこのリポジトリに含まれません。
+新規の文字レイヤーとCLIの既定文字サイズは、ドットが最も自然に表示される12pxです。
+
+1. [自家製ドットフォントシリーズ](http://jikasei.me/font/jf-dotfont/)からフォントを入手します。
+2. 次の場所へ配置します。
+
+   ```text
+   UsbScreen.GUI/Assets/Fonts/JF-Dot-MPlusH12.ttf
+   ```
+
+3. フォントを配置した状態で`UsbScreen.GUI`をビルドまたは発行します。
+
+Avaloniaはフォントをビルド時にアプリへ組み込むため、配置後の再ビルドが必要です。
+CLIで既定フォントとして使う場合は、実行ファイルと同じ場所の
+`Fonts/JF-Dot-MPlusH12.ttf`へ配置するか、環境変数`USBSCREEN_FONT_PATH`で
+ファイルの絶対パスを指定してください。
+
+> `JF-Dot-MPlusH12.ttf`の書体名は「JFドットM+H12」です。
+> 「JFドット東雲明朝12」を使用する場合は、対象ファイルとファミリー名を変更する必要があります。
+
+### 🚀 ビルド
+
+```sh
+dotnet build UsbScreen.sln
+```
+
+既に英語または中国語を保存している環境では、設定画面から「日本語」を選択して
+アプリを再起動してください。
+
+### 謝辞
+
+本リポジトリは
+[Blackwood416/MSU_Mini_UsbScreen](https://github.com/Blackwood416/MSU_Mini_UsbScreen)
+を基にした日本語対応フォークです。原作者およびMori Studioに感謝します。
 
 ---
 
@@ -28,7 +82,7 @@
 *   **Slideshow Mode**: Automatically cycle through your favorite images.
 *   **Presets**: Save and load your custom designs easily.
 *   **System Tray**: Runs quietly in the background; minimize to tray for persistent monitoring.
-*   **Multilingual**: Full support for English and Chinese.
+*   **Multilingual**: Full support for Japanese, English, and Chinese.
 
 ### ⌨️ CLI Tool (UsbScreen.CLI)
 *   **Lightweight**: Minimal footprint, perfect for scripts and automation.

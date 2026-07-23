@@ -24,6 +24,7 @@ public class LocalizationService
     /// </summary>
     public static IReadOnlyList<LanguageInfo> AvailableLanguages { get; } = new List<LanguageInfo>
     {
+        new("ja-JP", "日本語"),
         new("en-US", "English"),
         new("zh-CN", "中文")
     };

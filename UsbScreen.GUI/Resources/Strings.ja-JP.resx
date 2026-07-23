@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="0" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppTitle" xml:space="preserve">
+    <value>USBスクリーンマネージャー</value>
+  </data>
+  <data name="Connection" xml:space="preserve">
+    <value>接続</value>
+  </data>
+  <data name="SelectPort" xml:space="preserve">
+    <value>ポートを選択</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>接続</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>切断</value>
+  </data>
+  <data name="Ready" xml:space="preserve">
+    <value>準備完了</value>
+  </data>
+  <data name="Connected" xml:space="preserve">
+    <value>{0} に接続しました</value>
+  </data>
+  <data name="Disconnected" xml:space="preserve">
+    <value>切断しました</value>
+  </data>
+  <data name="NotConnected" xml:space="preserve">
+    <value>未接続</value>
+  </data>
+  <data name="NoPortSelected" xml:space="preserve">
+    <value>ポートが選択されていません</value>
+  </data>
+  <data name="ConnectionFailed" xml:space="preserve">
+    <value>接続に失敗しました: {0}</value>
+  </data>
+  <data name="TabImageDisplay" xml:space="preserve">
+    <value>画像表示</value>
+  </data>
+  <data name="TabTextDisplay" xml:space="preserve">
+    <value>文字表示</value>
+  </data>
+  <data name="TabImageSlideshow" xml:space="preserve">
+    <value>画像スライドショー</value>
+  </data>
+  <data name="TabTextSlideshow" xml:space="preserve">
+    <value>文字スライドショー</value>
+  </data>
+  <data name="TabFlashTool" xml:space="preserve">
+    <value>書込みツール</value>
+  </data>
+  <data name="DisplayImage" xml:space="preserve">
+    <value>画像を表示</value>
+  </data>
+  <data name="ImageDescription" xml:space="preserve">
+    <value>画像を選択してデバイスに表示します。</value>
+  </data>
+  <data name="ImageFile" xml:space="preserve">
+    <value>画像ファイル:</value>
+  </data>
+  <data name="ImagePathPlaceholder" xml:space="preserve">
+    <value>画像（png、jpg、gif）のパス...</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>参照</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>オプション:</value>
+  </data>
+  <data name="Scaling" xml:space="preserve">
+    <value>配置</value>
+  </data>
+  <data name="ResizeMode" xml:space="preserve">
+    <value>サイズ変更方式</value>
+  </data>
+  <data name="SendToScreen" xml:space="preserve">
+    <value>画面へ送信</value>
+  </data>
+  <data name="DisplayText" xml:space="preserve">
+    <value>文字を表示</value>
+  </data>
+  <data name="TextDescription" xml:space="preserve">
+    <value>複数行の文字を作成します。</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>背景:</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>内容...</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>色</value>
+  </data>
+  <data name="AddLine" xml:space="preserve">
+    <value>＋ 行を追加</value>
+  </data>
+  <data name="SendText" xml:space="preserve">
+    <value>文字を送信</value>
+  </data>
+  <data name="Slideshow" xml:space="preserve">
+    <value>スライドショー</value>
+  </data>
+  <data name="SlideshowDescription" xml:space="preserve">
+    <value>設定した間隔で画像を切り替えます。</value>
+  </data>
+  <data name="AddImages" xml:space="preserve">
+    <value>画像を追加</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="IntervalSeconds" xml:space="preserve">
+    <value>間隔（秒）:</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>開始</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="DragDropHint" xml:space="preserve">
+    <value>ここへファイルをドロップするか、追加をクリック</value>
+  </data>
+  <data name="FlashFirmware" xml:space="preserve">
+    <value>ファームウェアを書込み</value>
+  </data>
+  <data name="FlashDescription" xml:space="preserve">
+    <value>バイナリデータまたは画像をデバイスのフラッシュへ書き込みます。</value>
+  </data>
+  <data name="TargetFile" xml:space="preserve">
+    <value>対象ファイル:</value>
+  </data>
+  <data name="FlashFilePlaceholder" xml:space="preserve">
+    <value>.binまたは画像ファイルを選択...</value>
+  </data>
+  <data name="FlashType" xml:space="preserve">
+    <value>書込み種別:</value>
+  </data>
+  <data name="StartFlashing" xml:space="preserve">
+    <value>書込み開始</value>
+  </data>
+  <data name="ProcessingImage" xml:space="preserve">
+    <value>画像を処理しています...</value>
+  </data>
+  <data name="ImageDisplayed" xml:space="preserve">
+    <value>画像を表示しました</value>
+  </data>
+  <data name="DisplayingText" xml:space="preserve">
+    <value>文字を表示しています...</value>
+  </data>
+  <data name="TextDisplayed" xml:space="preserve">
+    <value>文字を表示しました</value>
+  </data>
+  <data name="PreparingFlash" xml:space="preserve">
+    <value>書込みを準備しています...</value>
+  </data>
+  <data name="FlashComplete" xml:space="preserve">
+    <value>書込みが完了しました</value>
+  </data>
+  <data name="InvalidImageFile" xml:space="preserve">
+    <value>画像ファイルが無効です</value>
+  </data>
+  <data name="InvalidFlashFile" xml:space="preserve">
+    <value>書込みファイルが無効です</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>エラー: {0}</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>テーマ</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="DropFilesHere" xml:space="preserve">
+    <value>ここへファイルをドロップ</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="RestartRequired" xml:space="preserve">
+    <value>変更の適用には再起動が必要です</value>
+  </data>
+  <data name="RestartNow" xml:space="preserve">
+    <value>今すぐ再起動</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>ページ</value>
+  </data>
+  <data name="DesignerTitle" xml:space="preserve">
+    <value>デザイナー（160×80）</value>
+  </data>
+  <data name="SendPage" xml:space="preserve">
+    <value>現在のページを送信</value>
+  </data>
+  <data name="PageProperties" xml:space="preserve">
+    <value>ページ設定</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="DurationSeconds" xml:space="preserve">
+    <value>表示時間（秒）</value>
+  </data>
+  <data name="DurationFormat" xml:space="preserve">
+    <value>表示時間: {0}秒</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="AddTextLayer" xml:space="preserve">
+    <value>文字を追加</value>
+  </data>
+  <data name="RemoveTextLayer" xml:space="preserve">
+    <value>文字を削除</value>
+  </data>
+  <data name="LayerProperties" xml:space="preserve">
+    <value>レイヤー設定</value>
+  </data>
+  <data name="TextLabel" xml:space="preserve">
+    <value>文字</value>
+  </data>
+  <data name="PositionX" xml:space="preserve">
+    <value>X座標</value>
+  </data>
+  <data name="PositionY" xml:space="preserve">
+    <value>Y座標</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>文字サイズ</value>
+  </data>
+  <data name="FontFamily" xml:space="preserve">
+    <value>フォント</value>
+  </data>
+  <data name="SelectLayerHint" xml:space="preserve">
+    <value>レイヤーを選択すると設定を編集できます</value>
+  </data>
+  <data name="DynamicVariablesHint" xml:space="preserve">
+    <value>変数: %CPU%、%RAM%、%TIME%、%DATE%、%INET%</value>
+  </data>
+  <data name="ColorHint" xml:space="preserve">
+    <value>色名（例: Red）または16進数（例: #FF0000）を使用できます</value>
+  </data>
+  <data name="MoveLayerUp" xml:space="preserve">
+    <value>前面へ</value>
+  </data>
+  <data name="MoveLayerDown" xml:space="preserve">
+    <value>背面へ</value>
+  </data>
+  <data name="DuplicateLayer" xml:space="preserve">
+    <value>複製</value>
+  </data>
+  <data name="StopRotation" xml:space="preserve">
+    <value>切替を停止</value>
+  </data>
+  <data name="StartRotation" xml:space="preserve">
+    <value>切替を開始</value>
+  </data>
+  <data name="AuthorLabel" xml:space="preserve">
+    <value>作者</value>
+  </data>
+  <data name="AcknowledgementsLabel" xml:space="preserve">
+    <value>謝辞</value>
+  </data>
+  <data name="AcknowledgementsText" xml:space="preserve">
+    <value>USBスクリーンおよび技術資料・サンプルを提供されたMori Studioに感謝します。</value>
+  </data>
+  <data name="DonationLabel" xml:space="preserve">
+    <value>寄付</value>
+  </data>
+  <data name="GitHubLabel" xml:space="preserve">
+    <value>GitHub</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>このアプリについて</value>
+  </data>
+  <data name="StatusReady" xml:space="preserve">
+    <value>準備完了</value>
+  </data>
+  <data name="DefaultPageName" xml:space="preserve">
+    <value>メインページ</value>
+  </data>
+  <data name="StatusRotationStopped" xml:space="preserve">
+    <value>ページ切替を停止しました</value>
+  </data>
+  <data name="StatusNotConnected" xml:space="preserve">
+    <value>未接続</value>
+  </data>
+  <data name="StatusRendererError" xml:space="preserve">
+    <value>描画機能が初期化されていません</value>
+  </data>
+  <data name="PreparingToFlash" xml:space="preserve">
+    <value>書込みを準備しています...</value>
+  </data>
+  <data name="GifPlaying" xml:space="preserve">
+    <value>GIFを再生しています...</value>
+  </data>
+  <data name="GitHubRepoLink" xml:space="preserve">
+    <value>https://github.com/Akihiko-Fuji/MSU_Mini_UsbScreen_J</value>
+  </data>
+  <data name="AuthorValue" xml:space="preserve">
+    <value>Blackwood</value>
+  </data>
+  <data name="ErrorPrefix" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="KeepAlive" xml:space="preserve">
+    <value>表示を維持</value>
+  </data>
+  <data name="SavePreset" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="LoadPreset" xml:space="preserve">
+    <value>読込み</value>
+  </data>
+  <data name="SavePresetTooltip" xml:space="preserve">
+    <value>現在の設定をプリセットファイルへ保存します</value>
+  </data>
+  <data name="LoadPresetTooltip" xml:space="preserve">
+    <value>プリセットファイルから設定を読み込みます</value>
+  </data>
+  <data name="PresetSaved" xml:space="preserve">
+    <value>プリセットを保存しました</value>
+  </data>
+  <data name="PresetLoaded" xml:space="preserve">
+    <value>プリセットを読み込みました</value>
+  </data>
+  <data name="InvalidPresetFile" xml:space="preserve">
+    <value>プリセットファイルが無効です</value>
+  </data>
+  <data name="MinimizeToTray" xml:space="preserve">
+    <value>閉じるときにタスクトレイへ最小化</value>
+  </data>
+  <data name="TrayShowWindow" xml:space="preserve">
+    <value>ウィンドウを表示</value>
+  </data>
+  <data name="TrayHideWindow" xml:space="preserve">
+    <value>ウィンドウを隠す</value>
+  </data>
+  <data name="TrayExit" xml:space="preserve">
+    <value>終了</value>
+  </data>
+</root>
