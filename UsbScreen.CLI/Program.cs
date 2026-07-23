@@ -395,7 +395,7 @@ namespace UsbScreen
                     {
                         var font = fonts != null && j < fonts.Length ? fonts[j] : "Default";
                         var textColor = textColors != null && j < textColors.Length ? textColors[j] : null;
-                        var textSize = textSizes != null && j < textSizes.Length ? textSizes[j] : 16;
+                        var textSize = textSizes != null && j < textSizes.Length ? textSizes[j] : 12;
                         FontFamily loadedFont;
                         Font textFont;
                         if (font == "Default")
