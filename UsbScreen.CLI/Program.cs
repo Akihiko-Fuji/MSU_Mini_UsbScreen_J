@@ -387,10 +387,6 @@ namespace UsbScreen
 
                     // Create list of text styles
                     var textStyles = new List<TextStyle>();
-                    // if (fontStream == null)
-                    // {
-                    //     Console.WriteLine("Error: Arial font not found.");
-                    // }
                     for (int j = 0; j < texts.Length; j++)
                     {
                         var font = fonts != null && j < fonts.Length ? fonts[j] : "Default";
@@ -403,7 +399,9 @@ namespace UsbScreen
                             using var fontStream = FontHelper.GetDefaultFontStream();
                             if (fontStream == null)
                             {
-                                Console.WriteLine("Error: Arial font not found.");
+                                Console.WriteLine(
+                                    "Error: Default font not found. Place JF-Dot-MPlusH12.ttf " +
+                                    "in the Fonts directory or set USBSCREEN_FONT_PATH.");
                             }
                             loadedFont = fontCollection.Add(fontStream!);
                             textFont = loadedFont.CreateFont(textSize);
