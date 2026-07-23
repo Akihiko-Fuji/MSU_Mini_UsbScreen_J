@@ -23,8 +23,8 @@ public class TextLayerData
     public double Y { get; set; }
     public string Text { get; set; } = "Text";
     public string Color { get; set; } = "White";
-    public int FontSize { get; set; } = 16;
-    public string FontFamily { get; set; } = "Arial";
+    public int FontSize { get; set; } = 12;
+    public string FontFamily { get; set; } = FontConfiguration.AvaloniaFontFamily;
 }
 
 /// <summary>
