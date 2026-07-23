@@ -12,7 +12,18 @@ public static class FontHelper
         var externalFontPath = ResolveJapaneseFontPath();
         if (externalFontPath != null)
         {
-            return File.OpenRead(externalFontPath);
+            try
+            {
+                return File.OpenRead(externalFontPath);
+            }
+            catch (IOException)
+            {
+                // The file may have been removed, replaced, or locked after path resolution.
+            }
+            catch (UnauthorizedAccessException)
+            {
+                // Fall back when the configured font cannot be read.
+            }
         }
 
         // Keep the original embedded font as a compatibility fallback.
